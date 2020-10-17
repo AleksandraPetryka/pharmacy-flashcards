@@ -1,8 +1,8 @@
 const flashcards = [
     {
-        question: 'Co to jest melo costam?',
-        answer: 'Melo cośtam to jest melanz',
-        img: 'https://img.hopaj.pl/images/0/d/0d78d5cdba406d08cdb0704edcfce717.jpg',
+        question: 'Wzór i nazwa chemiczna dla Meloksykam',
+        answer: '4-Hydroksy-2-metylo-1,1-diokso-N-(5-metylo-1,3-tiazol-2-ilo)-1,2-benzotiazyno-3-karboksamid',
+        img: 'https://drive.google.com/file/d/1fuvHBTUUsELng4xPwhU4dLDFYdYQTEns/view?usp=sharing',
     },
     {
         question: 'Kto jest ukochanym koteczkiem?!',
