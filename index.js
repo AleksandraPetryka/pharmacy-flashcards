@@ -1,37 +1,26 @@
-const flashcards = [
-    {
-        question: 'Wzór i nazwa chemiczna dla Meloksykam',
-        answer: '4-Hydroksy-2-metylo-1,1-diokso-N-(5-metylo-1,3-tiazol-2-ilo)-1,2-benzotiazyno-3-karboksamid',
-        img: 'https://drive.google.com/file/d/1fuvHBTUUsELng4xPwhU4dLDFYdYQTEns/view?usp=sharing',
-    },
-    {
-        question: 'Kto jest ukochanym koteczkiem?!',
-        answer: 'Moja cudowniutka Olusia <3!!!',
-        img: 'https://ca.slack-edge.com/T017AD2GP50-U017GJK4UPN-e5705864f239-512',
-    }
-];
+console.log('my flashCards are: ', flashCards);
 
 
-const shownFlashcards = {};
-let shownFlashcardsNum = 0;
+const shownFlashCards = {};
+let shownFlashCardsNum = 0;
 let isFinish = false;
 
 function drawFlashcard() {
-    if (shownFlashcardsNum === flashcards.length) {
+    if (shownFlashCardsNum === flashCards.length) {
         console.log('showing finish');
         showFinish();
         isFinish = true;
         return;
     }
 
-    let id = Math.floor(Math.random() * flashcards.length);
-    while(shownFlashcards[id]) {
-        id = Math.floor(Math.random() * flashcards.length);
+    let id = Math.floor(Math.random() * flashCards.length);
+    while(shownFlashCards[id]) {
+        id = Math.floor(Math.random() * flashCards.length);
     }
 
-    shownFlashcards[id] = true;
-    shownFlashcardsNum += 1;
-    return flashcards[id];
+    shownFlashCards[id] = true;
+    shownFlashCardsNum += 1;
+    return flashCards[id];
 }
 
 function handleNextCardClick() {
@@ -50,7 +39,7 @@ function handleNextCardClick() {
 function main() {
     generateMainHtml();
     handleNextCardClick();
-    
+
     const flashcard = drawFlashcard();
     showFlashCard(flashcard);
 }

@@ -4,6 +4,8 @@ function showFinish() {
 
     const finish = document.createElement('h1');
     finish.innerText = `Congratulations, you have answered ${shownFlashcardsNum} flashcards!`;
+
+
     div.appendChild(finish);
 }
 

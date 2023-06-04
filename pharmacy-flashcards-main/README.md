@@ -1,2 +1,0 @@
-# pharmacy-flashcards
-# pharmacy-flashcards
